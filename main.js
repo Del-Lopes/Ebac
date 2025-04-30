@@ -7,8 +7,6 @@ const alunos = [
   { nome: "Felipe", nota: 7 },
 ];
 
-function AlunosNotaMaiorIgualSeis(lista) {
-  return lista.filter((aluno) => aluno.nota >= 6);
-}
-const AlunoAprovado = AlunosNotaMaiorIgualSeis(alunos);
+const AlunoAprovado = alunos.filter((item) => item.nota >= 6);
+
 console.log(AlunoAprovado);
